@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xam1.View.DetailPage">
+    
+    <ContentPage.Content>
+
+        <ScrollView Padding="10">
+
+            <StackLayout>
+
+
+                <Image Source="{Binding Avatar}" HeightRequest="200" WidthRequest="200"></Image>
+                <Label Text="{Binding Name}" FontSize="24" HorizontalOptions="CenterAndExpand"></Label>
+                <Label Text="{Binding Title} "  TextColor="Purple"></Label>
+                <Label Text="{Binding Description}"></Label>
+
+                <Button Text="Go to Website" x:Name="ButtonWebsite"></Button>
+                
+    
+
+            </StackLayout>
+
+        </ScrollView>
+        
+        
+        
+    
+    </ContentPage.Content>
+</ContentPage>
